@@ -19,7 +19,6 @@ public class Main {
         // Массив, в котором можно хранить три дробных числа – 1.57, 7.654, 9.986 –  сразу заполнив его значениями.
 
         double [] fractionals = { 1.57, 7.654, 9.986 };
-        fractionals [0] = 1.57;
         System.out.println(Arrays.toString(fractionals));
 
         // Task 3
@@ -53,18 +52,12 @@ public class Main {
         //Важно: код должен работать с любым целочисленным массивом, поэтому для решения задания вам нужно использовать циклы.
         //Распечатайте результат преобразования в консоль.
 
-        int nums[] = new int[2];
-        for(int i=1;i<2;i++){
-            if(i%2==0)
-                nums[i]= i;
-            System.out.println(nums[i]);
+        int [] arr1 = { 1,2,3 };
+        for(int i=0;i < arr1.length;i++){
+            if(arr1 [i] %2 == 1) {
+                arr1[i] += 1;
+            }
         }
-
-
-
-
-
-
-
-    }
+            System.out.println(Arrays.toString( arr1));
+        }
 }
